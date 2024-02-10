@@ -7,28 +7,42 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src='js/newtab.js'></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
     </head>
-    
     <body>
   <!-- Nav bar customized  -->
-        <ul class="nav justify-content-end">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Nina Vu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+          </svg>
+      </button>
+      <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#homepage">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Aboutme">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Project">Project</a>
+                <a class="nav-link active" aria-current="page" href="#homepage">Home</a>
               </li>
-
-            <!-- <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Project</a>
-            </li> -->
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#Aboutme">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#Project">Project</a>
+                </li>
+  
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Project</a>
+              </li> -->
+            </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
         
 <!-- Home page section -->
@@ -36,24 +50,39 @@
             <!-- <div class="background">
                 <img src="https://source.unsplash.com/random/1920x1080/?cloud.">
             </div> -->
-            <p> Hello, I'm</p>
-            <!-- <p>  </p> -->
-            <div class="name"> Nina Vu </div>
-            <div class="avatar">
-                <img src="assets/2.png">
+
+            <div class="row g-0 text-center">
+                <div class="col-sm-6 col-md-8">
+                    <p> Hello, I'm</p>
+                    <h1 class="name"> Nina Vu <h1>
+                    <div class="birefintro">
+                    
+                        <p> Software Engineer</p>
+                        <p> Computer Science Student (Senior) George Mason University 
+                            Woman in Tech 
+                            Passionate about CX and Modern Technology
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4"><div class="avatar">
+                    <img src="assets/nina-profile.png">
+                </div></div>
+            </div>
+
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    
+                </div>
+                <div class="col-sm-6">
+                    
+                </div>
             </div>
             
-            <div class="birefintro">
-                <p> Software Engineer</p>
-                <p> Computer Science Student (Senior) George Mason University 
-                    Woman in Tech 
-                    Passionate about CX and Modern Technology
-                </p>
-            </div>
-       
+        </div>
        </section>
 
-       <div class="Aboutme" id="Aboutme">
+       <section class="Aboutme" id="Aboutme">
 
 
             <div class="background">
@@ -61,18 +90,29 @@
             
 
             <div class="personalbackground">
-
+                <p> I am a fourth-year student at George Mason University. 
+                I am passionate about improving experience leveraging modern technology solutions. I enjoy UI/UX, cloud technology, AI/ ML. 
+                The key courses I have taken to advance my skillsets include data structure, probability/ statistic, etc.
+                </p>
             </div>
             <div class="skill">
-
+                <ul class="language">
+                    <li><a><i class="fa-brands fa-java fa-4x"></i></a></li>
+                    <li><a><i class="fa-brands fa-python fa-4x"></i></a></li>
+                    <li><a><i class="fa-brands fa-golang fa-4x"></i></a></li>
+                    <li><a><i class="fa-brands fa-js fa-4x"></i></a></li>
+                    <li><a><i class="fa-brands fa-html5 fa-4x"></i></a></li>
+                    <li><a><i class="fa-brands fa-docker fa-4x"></i></a></li>
+                    <li><a><i class="fa-brands fa-aws fa-4x"></i></a></li>
+                </ul>
             </div>
             <div class="interst">
 
             </div>
         </div>
-       </div>
+       </section>
 
-       <div class="Contactme" id="contact">
+       <section class="Contactme" id="contact">
         <ul class="contactinfo">
             <li><a href="mailto:ninavu499@gmail.com">
                 <i class="bi bi-envelope-paper-fill">
@@ -96,6 +136,6 @@
                 </i>
             </a></li>
         </ul>
-       </div>
+       </section>
     </body>
 </html>
