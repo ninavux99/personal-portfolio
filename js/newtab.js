@@ -5,3 +5,4 @@ window.addEventListener ("scroll", () => {
     else {
     document.querySelector ('body').style.background
     } })
+
