@@ -33,16 +33,34 @@ html {
 }
 
 .Aboutme {
-    /* background-color: #19181A; */
+    background-color: #19181A;
+    
 }
 
 .Contactme {
+    background-color: #000000;
+}
+
+.project {
     background-color: #19181A;
 }
+
+header{
+    display: flex;
+    position: sticky;
+    transition: background-color 0.4s ease-in-out;
+}
+
+header.scrolled {
+    background-color: #f4f4f4;
+    opacity: 0.98;
+}
+
 .briefintro {
-    font-size: 71px;
-    font-family: 'Exo 2', sans-serif;
-    padding: 100px;
+    font-size: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    /* padding: 100px; */
 }
 
 .briefintro h2 {
@@ -52,8 +70,9 @@ html {
 }
 
 .homepage .name {
-    font-family: 'Kalnia', serif;
+    font-family:'Montserrat', sans-serif ;
     font-size: 100px;
+    font-weight: 900;
 }
 .briefbio {
     font-family: 'Exo 2', sans-serif;
@@ -92,37 +111,6 @@ html {
     max-height: 100%; */
 }
 
-/* .background img {
-    max-width: 200%;
-    max-height: 100vh;
-    margin: auto;
-}  */
-/* 
-.navbar, .navigate {
-    display: flex;
-    
-} */
-
-/* .navbar {
-    position: absolute;
-    max-width: 1250px;
-    justify-content:right;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
-    /* font-family: 'Rubik', sans-serif;
-    font-family: 'Rubik Glitch Pop', system-ui; 
-} */
-/* .navigate{
-    /* justify-content: center;
-    flex-direction: flex;
-    position: relative; */
-    /* list-style-type: none;
-    gap: 20px;
-    font-size: 20px;
-} */ 
-
 li {
     list-style-type: none;
 }
@@ -153,6 +141,7 @@ li {
 }
 
 .fa-brands {
+
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -163,7 +152,6 @@ nav {
     margin-right: 30px;
     font-size: 20px;
     font-family: 'Philosopher', sans-serif;
-    /* background-color: #000; */
     /* background:none; */
 }
 /* Second page */
@@ -173,11 +161,10 @@ nav {
 }
 
 .banner {
-    font-size: 71px;
-    font-weight:700;
-    font-family: 'Kalnia', serif;
+    font-size: 150px;
+    font-weight:900;
+    font-family: 'Philosopher', sans-serif;
 }
-
 .banner:hover {
     font-style: italic;
 }
