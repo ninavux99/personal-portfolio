@@ -8,7 +8,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    
     color: #f4f4f4;
 }
 
@@ -21,7 +20,7 @@
 }
 body {
             /* text-align: center; */
-            font-size: 14px;
+            /* font-size: 20px; */
             font-family: 'Exo 2', sans-serif;
             color: #f4f4f4;
             background-color: #19181A;
@@ -46,7 +45,7 @@ html {
 }
 
 header{
-    display: flex;
+    /* display: flex; */
     position: sticky;
     transition: background-color 0.4s ease-in-out;
 }
@@ -66,13 +65,16 @@ header.scrolled {
 .briefintro h2 {
     font-size: 50px;
     /* font-weight: bold; */
-    font-family: 'Philosopher', sans-serif;
+    font-family: genica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
 }
 
 .homepage .name {
-    font-family:'Montserrat', sans-serif ;
-    font-size: 100px;
-    font-weight: 900;
+    font-family:'Philosopher', sans-serif ;
+    font-size: 180px;
+    font-style: italic;
+    font-weight: 1000;
 }
 .briefbio {
     font-family: 'Exo 2', sans-serif;
@@ -85,7 +87,6 @@ header.scrolled {
     color: #f4f4f4;
     font-size: 28px;
 }
-
 
 
 .container-fluid {
@@ -115,9 +116,7 @@ li {
     list-style-type: none;
 }
 
-.avatar {
- /* border-radius: 50%; */
- 
+.avatar { 
 }
 .avatar img {
     /* position: absolute; */
@@ -128,11 +127,12 @@ li {
 }
 
 .homepage{
-    /* color: aliceblue; */
-    /* display: flex; */
-    
+    background-size: cover;
+    backdrop-filter: blur(90px);
+    background-color: #19181A;
     align-items: center;
     align-content: center;
+    /* display: flex; */
 }
 
 .language {
@@ -141,7 +141,6 @@ li {
 }
 
 .fa-brands {
-
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -156,17 +155,21 @@ nav {
 }
 /* Second page */
 .Aboutme {
+    display: flex;
     align-items: center;
     align-content: center;
 }
 
-.banner {
-    font-size: 150px;
+.banner p{
+    font-size: 50px;
     font-weight:900;
     font-family: 'Philosopher', sans-serif;
+    color: rgb(174, 220, 232);
+    
 }
 .banner:hover {
     font-style: italic;
+    /* color: #1e8397; */
 }
 
 /* Third page */
@@ -180,9 +183,9 @@ nav {
 
 .bi {
     width: auto;
-    height: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #DA7B93;
     transition: all 0.3s ;
 }
@@ -191,4 +194,62 @@ nav {
     transform: translateY(-10px);
     background-color: var(-);
     color: var(--clr-light);
+}
+.color {
+    height: .3rem;
+    width: 8rem;
+    background-color: #aedce8;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    margin-bottom: 2rem;
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    border-radius: 9999px; /* Using a large value for border-radius to ensure a round shape */
+    background-color: #12417368; /* Teal color with 10% opacity */
+    padding: 5px 10px; /* 3px top/bottom padding and 10px left/right padding */
+    font-size: 20px; /* Adjust font size as per your requirement */
+    font-weight: 500; /* Adjust font weight as per your requirement */
+    line-height: 1; /* Adjust line height as per your requirement */
+    color: #aedce8; /* Teal color with 30% opacity */
+  }
+
+.language li{
+    box-shadow: #f4f4f4;
+    padding-left: 20px;
+    padding-right: 20px;}
+
+.block {
+    height: .3rem;
+    width: 6rem;
+    background-color: #aedce8;
+    margin-right: auto;
+    /* margin-left: auto; */
+    margin-bottom: 2rem;
+    opacity: 1;
+}
+
+.resume-button {
+    display: inline-block;
+    background-color: #12417368; /* Green */
+    border: none;
+    color: #aedce8;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    /* opacity: 1%; */
+}
+
+.resume-button:hover {
+    background-color: #12417368; /* Darker Green */
+    opacity: 3%;
 }

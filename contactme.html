@@ -17,7 +17,7 @@
         <div class="main" id="main">
 
 
-       <section class="homepage" id="homepage">
+    <section class="homepage" id="homepage">
 
 <!-- Nav bar customized  -->
 <header>
@@ -42,7 +42,7 @@
                   <a class="nav-link text-white" href="#Aboutme">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#project">Project</a>
+                    <a class="nav-link text-white" href="http://127.0.0.1:3000/project.html">Project</a>
                   </li>
                 <li class="nav-item">
                   <a class="nav-link text-white" href="#contact">Contact</a>
@@ -60,31 +60,33 @@
   </div>   
 </header>
 <!-- Home page section -->
-            <div class="container-lg">
-            <div class="row min-vh-100 align-items-center align-content-center">
-                <div class="col-md-6">
-                    <div class="briefintro">
-                    <p> Hello</p>
-                    <p>I am</p>
-                    <h1 class="name"> Nina Vu<h1>
-                    </div>
-                    <h2> Software Engineer </h2>
-                        <div class="briefbio"> 
-                            <p>Front-end &</p>
-                             <p>software developer</p>
-                            <p>based in DM[V]</p>
-                        </div>
-                    
-                </div>
-                <div class="col-md-6 ">
-                    <!-- <div class="avatar">
-                        <img src="assets/nina-profile.png">
-                    </div> -->
-                </div>
-               
+<div class="container-lg">
+    <div class="row min-vh-100 justify-content-center align-items-center">
+        <div class="col-md-6 text-center">
+            <div class="briefintro">
+                <p style="font-size: 30px;">Hello</p>
+                <p style="font-size: 30px;">My name is</p>
+                <h1 class="name">Nina Vu</h1>
             </div>
-            
+            <!-- <h2>Software Engineer</h2> -->
+            <div class="briefbio"> 
+                <p>front-end &</p>
+                <p>software developer</p>
+                <p>based in DM<span style="color:#DA7B93;">[</span>V<span style="color: #DA7B93;">]</span></p>
+                
+                <a href="assets/resume-spring2024.pdf" target="_blank">
+                    <button class="resume">Show Resume</button>
+                </a>
+            </div>
         </div>
+        <!-- This div is for the avatar section, you can uncomment and modify it as needed -->
+        <!-- <div class="col-md-6 ">
+            <div class="avatar">
+                <img src="assets/nina-profile.png" alt="Nina's Profile Picture">
+            </div>
+        </div> -->
+    </div>
+</div>
 
         <script>
             VANTA.TOPOLOGY({
@@ -92,116 +94,112 @@
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
-            minHeight: 800,
-            minWidth: 800,
+            minHeight: 200,
+            minWidth: 200,
             scale: 1.00,
             scaleMobile: 1.00,
             color: 0xcaab41, // Remove the '#' before the hexadecimal color code
-            backgroundColor: 0x19181A
+            backgroundColor: 0x19181A,
+            chaos: 10.0
           });
            </script>
        </section>
 
-       <section class="Aboutme" id="Aboutme">
-            <div class="container-lg">
-                
-                <div class="row min-vh-100 align-items-center align-content-center">
-                   <div class="col-md-6"> <div class="banner">
-                        <p>GREP</p>
-                        <p> "NINA VU" :</p>
-                    </div>
-                    <div class="personalbackground">
-                        <div class="longintro">
-                        <p>I am a software engineer based in Virginia- DMV area</p>
-                        <p>I am a fourth-year student at George Mason University. </p>
-                        <p>I am passionate about improving experience leveraging modern technology solutions. </p>
-                        <p>I enjoy UI/UX, cloud technology, AI/ ML. </p>
-                        <p>The key courses I have taken to advance my skillsets include data structure, probability/ statistic, etc.</p>
-                    </div>
-                    </div></div>
-                    <div class="col-md-6 ">
-                        <div class="avatar">
-                            <img src="assets/nina-profile.png">
-                        </div>
-                    </div>
+<section class="Aboutme" id="Aboutme">
+    <div class="container-lg">
+        <div class="row min-vh-80 align-items-center">
+            <div class="col-lg-6 spacing">
+                <div class="banner">
+                    <h2 style="font-size: 90px;">About</h2><h2 style="font-size: 90px;">Me</h2>
+                    <hr class="color">
                 </div>
-            <div class="row min-vh-20 align-items-center align-content-center">
-            <div class="skill">
-                <div class="backend">
-                    <div class="banner">
-                        <p>Software developer</p>
-                    </div>
-                    <div class="skillbio">
+                <div class="personalbackground">
+                    <p>I am a software engineer based in the Virginia-DMV area.</p>
+                    <p>I am a fourth-year student at George Mason University.</p>
+                    <p>I am passionate about leveraging modern technology solutions to improve user experiences.</p>
+                    <p>I enjoy working with UI/UX design, cloud technology, and AI/ML.</p>
+                    <p>Key courses I have taken to advance my skillsets include data structures, probability/statistics, etc.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="avatar">
+                    <img src="assets/nina-profile.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+
+    
+    <div class="text-center pt-5">
+        <div class="banner">
+            <h2 class="display-4 pt-5" style="font-size: 90px;">Skills</h2>
+            <div class="block" style="margin-left: auto;"></div>
+        </div>
+    </div>
+
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                
+                <div class="skill">
+                    <div class="backend">
+                        <h3 style ="padding: 20px; justify-content: center ;">  Backend Development </h3>
                         <ul class="language">
-                            <li><a><i class="fa-brands fa-java "> Java</i></a></li>
-                            <li><a><i class="fa-brands fa-python ">Python</i></a></li>
-                            <li><a><i class="fa-brands fa-golang fa-4x">Golang</i></a></li>
-                            <li><a><i class="fa-brands fa-docker fa-4x">Docker</i></a></li>
+                            <li><div class="container">Java</div></li>
+                            <li><div class="container">Python</div></li>
+                            <li><div class="container">Golang</div></li>
+                            <li><div class="container">Docker</div></li>
+                            <li><div class="container">C</div></li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="frontend">
-                    <div class="banner">
-                        <p>Front-end developer</p>
-                    </div>
-                    <div class="skillbio">
-                        <ul class="language">
-                    
-                            <li><a><i class="fa-brands fa-js fa-4x"></i></a></li>
-                            <li><a><i class="fa-brands fa-html5 fa-4x"></i></a></li>
-                            <li><a><i class="fa-brands fa-aws fa-4x"></i></a></li>
-                        </ul>
-                    </div>
+            </div>
+            <!-- <div class="col-md-6"> -->
+                <div class="frontend" style="padding-bottom: 20px;">
+                    <h3 style ="padding: 20px;">Frontend Development</h3>
+                    <ul class="language">
+                        <li><div class="container">JavaScript</div></li>
+                        <li><div class="container">HTML</div></li>
+                        <li><div class="container">CSS</div></li>
+                    </ul>
                 </div>
-
-                
-            </div>
+            <!-- </div> -->
         </div>
-        <div class="row">
-            <div class="interst">
+    </div>
+</section>
 
-            </div>
-        </div>
-            </div>
-        
-            <!-- <script>
-                VANTA.TRUNK({
-                  el: "#Aboutme",
-                  mouseControls: true,
-                  touchControls: true,
-                  gyroControls: false,
-                  minHeight: 200.00,
-                  minWidth: 200.00,
-                  scale: 1.00,
-                  scaleMobile: 1.00,
-                  color: 0xcaab41,
-                  backgroundColor: 0x000000,
-                  spacing: 1.00,
-                  chaos: 2.50
-                })
-                </script> -->
-        </section>
 
 
         <!-- Projects -->
         <section class="project" id="project"> 
-            <div class="row min-vh-100 align-items-center align-content-center">
-                <div class="banner">
-                <p>PRO_</p>
-                <p>JECTS</p>
+            <div class="container-lg">
+            <div class="row min-vh-80 align-items-center align-content-center">
+                <!-- <div class="text-center "> -->
+                    <div class="banner">
+                        <h2 class="display-4 pt-5 " style="font-size: 90px;">Projects
+                           <a href="http://127.0.0.1:3000/project.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" style="color: #aedce8; ">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                            </a>
+                        </h2>
+                        
+                        <div class="block"></div>
+                    <!-- </div> -->
                 </div>
+                
+            </div>
+          
             </div>
             
         </section>
        
        <section class="Contactme" id="contact">
-        <div class="container-lg">
+        <div class="container-lg py-4">
             <div class="row min-vh-100 align-items-center align-content-center">
                 <div class="col-md-8">
                     <div class="banner">
-                        <p>LET'S</p> 
-                        <p>CONNECT</p>
+                        <p style="color: #fff; font-size: 90px;">LET'S</p> 
+                        <p style="font-size: 90px;">CONNECT</p>
                     </div>
                 </div>
                 <div class="col-md-4">
