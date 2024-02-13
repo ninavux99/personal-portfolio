@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Portfolio</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src='js/newtab.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+  </head>
+    <body>
+        <div class="main" id="main">
+
+
+    <section class="homepage" id="homepage">
+
+<!-- Nav bar customized  -->
+<header>
+<div class="nav-bar">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">
+          <div class="brand">Nina Vu</div>
+        </a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+              <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-end " id="navbarNav">
+          <ul class="navbar-nav ">
+              <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#homepage">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#Aboutme">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="http://127.0.0.1:3000/project.html">Project</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#contact">Contact</a>
+                </li>
+                
+    
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Project</a>
+                </li> -->
+              </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>   
+</header>
+<!-- Home page section -->
+<div class="container-lg">
+    <div class="row min-vh-100 justify-content-center align-items-center">
+        <div class="col-md-6 text-center">
+            <div class="briefintro">
+                <p style="font-size: 30px;">Hello</p>
+                <p style="font-size: 30px;">My name is</p>
+                <h1 class="name">Nina Vu</h1>
+            </div>
+            <!-- <h2>Software Engineer</h2> -->
+            <div class="briefbio"> 
+                <p>front-end &</p>
+                <p>software developer</p>
+                <p>based in DM<span style="color:#DA7B93;">[</span>V<span style="color: #DA7B93;">]</span></p>
+                
+                <a href="assets/resume-spring2024.pdf" target="_blank">
+                    <button class="resume">Show Resume</button>
+                </a>
+            </div>
+        </div>
+        <!-- This div is for the avatar section, you can uncomment and modify it as needed -->
+        <!-- <div class="col-md-6 ">
+            <div class="avatar">
+                <img src="assets/nina-profile.png" alt="Nina's Profile Picture">
+            </div>
+        </div> -->
+    </div>
+</div>
+
+        <script>
+            VANTA.TOPOLOGY({
+            el: "#homepage",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200,
+            minWidth: 200,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xcaab41, // Remove the '#' before the hexadecimal color code
+            backgroundColor: 0x19181A,
+            chaos: 10.0
+          });
+           </script>
+       </section>
+
+<section class="Aboutme" id="Aboutme">
+    <div class="container-lg">
+        <div class="row min-vh-80 align-items-center">
+            <div class="col-lg-6 spacing">
+                <div class="banner">
+                    <h2 style="font-size: 90px;">About</h2><h2 style="font-size: 90px;">Me</h2>
+                    <hr class="color">
+                </div>
+                <div class="personalbackground">
+                    <p>I am a software engineer based in the Virginia-DMV area.</p>
+                    <p>I am a fourth-year student at George Mason University.</p>
+                    <p>I am passionate about leveraging modern technology solutions to improve user experiences.</p>
+                    <p>I enjoy working with UI/UX design, cloud technology, and AI/ML.</p>
+                    <p>Key courses I have taken to advance my skillsets include data structures, probability/statistics, etc.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="avatar">
+                    <img src="assets/nina-profile.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+
+    
+    <div class="text-center pt-5">
+        <div class="banner">
+            <h2 class="display-4 pt-5" style="font-size: 90px;">Skills</h2>
+            <div class="block" style="margin-left: auto;"></div>
+        </div>
+    </div>
+
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                
+                <div class="skill">
+                    <div class="backend">
+                        <h3 style ="padding: 20px; justify-content: center ;">  Backend Development </h3>
+                        <ul class="language">
+                            <li><div class="container">Java</div></li>
+                            <li><div class="container">Python</div></li>
+                            <li><div class="container">Golang</div></li>
+                            <li><div class="container">Docker</div></li>
+                            <li><div class="container">C</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-6"> -->
+                <div class="frontend" style="padding-bottom: 20px;">
+                    <h3 style ="padding: 20px;">Frontend Development</h3>
+                    <ul class="language">
+                        <li><div class="container">JavaScript</div></li>
+                        <li><div class="container">HTML</div></li>
+                        <li><div class="container">CSS</div></li>
+                    </ul>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Projects -->
+        <section class="project" id="project"> 
+            <div class="container-lg">
+            <div class="row min-vh-80 align-items-center align-content-center">
+                <!-- <div class="text-center "> -->
+                    <div class="banner">
+                        <h2 class="display-4 pt-5 " style="font-size: 90px;">Projects
+                           <a href="http://127.0.0.1:3000/project.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" style="color: #aedce8; ">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                            </a>
+                        </h2>
+                        
+                        <div class="block"></div>
+                    <!-- </div> -->
+                </div>
+                
+            </div>
+          
+            </div>
+            
+        </section>
+       
+       <section class="Contactme" id="contact">
+        <div class="container-lg py-4">
+            <div class="row min-vh-100 align-items-center align-content-center">
+                <div class="col-md-8">
+                    <div class="banner">
+                        <p style="color: #fff; font-size: 90px;">LET'S</p> 
+                        <p style="font-size: 90px;">CONNECT</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                <ul class="contactinfo">
+                    <li><a href="mailto:ninavu499@gmail.com">
+                        <i class="bi bi-envelope-paper-fill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-paper-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75zM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765M16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516zm-8 3.3 5.693-3.162L0 6.873v6.5Z"/>
+                              </svg>
+                        </i>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/nina-d-vu/">
+                        <i class="bi bi-linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                              </svg>
+                        </i>    
+                    </a></li>
+                    <li><a href="https://github.com/ninavux99?tab=repositories">
+                        <i class="bi bi-github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                              </svg>
+                        </i>
+                    </a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <script>
+            VANTA.TOPOLOGY({
+            el: "#contact",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 800,
+            minWidth: 800,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xcaab41, // Remove the '#' before the hexadecimal color code
+            backgroundColor: 0x19181A
+          });
+           </script>
+       </section>
+      
+       <!-- Initialize VANTA.TOPOLOGY effect -->
+    </div>
+    </body>
+    
+</html>
